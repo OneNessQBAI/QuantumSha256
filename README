@@ -1,0 +1,84 @@
+Quantum and Classical SHA-256 Hashing Scripts
+Overview
+This repository contains Python scripts for hashing messages using both classical and quantum-inspired SHA-256 algorithms. These scripts demonstrate how quantum computing principles can significantly enhance cryptographic processes. The work was developed by Jerry Almonte De Leon, Founder of OneNess Blockchain AI, using the Quantum DeLeon AI quantum program, which is set to be released to the public in 2025.
+
+Installation
+To use these scripts, Python must be installed on the system, along with the necessary libraries.
+
+Prerequisites
+Python 3.x: Ensure Python 3.x is installed.
+Cirq: A Python library for quantum circuits, which can be installed using pip:
+bash
+Copy code
+pip install cirq
+Files in the Repository
+CSHA256.py: A script to calculate the classical SHA-256 hash of a user-provided input.
+QSHA256.py: A script to calculate the quantum-inspired SHA-256 hash using quantum computing principles.
+Usage
+Running the Classical SHA-256 Script
+Open a terminal or command prompt.
+
+Navigate to the directory containing CSHA256.py.
+
+Run the script:
+
+bash
+Copy code
+python CSHA256.py
+Enter a message when prompted to receive the classical SHA-256 hash.
+
+Running the Quantum SHA-256 Script
+Open a terminal or command prompt.
+
+Navigate to the directory containing QSHA256.py.
+
+Run the script:
+
+bash
+Copy code
+python QSHA256.py
+Enter a message when prompted to receive the quantum-inspired SHA-256 hash.
+
+Results
+The results from running both the classical and quantum SHA-256 scripts are as follows:
+
+Classical SHA-256 Output
+bash
+Copy code
+Enter a message to hash using Classical SHA-256: hello world
+Classical SHA-256 hash: b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9
+Quantum SHA-256 Output
+sql
+Copy code
+Enter a message to hash using Quantum SHA-256: hello world
+Quantum result (binary): 1011100101001101001001111011100110010011010011010011111000001000101001010010111001010010110101111101101001111101101010111111101011000100100001001110111111100011011110100101001110000000111011101001000010001000111101111010110011100010111011111100110111101001
+Measured qubits: 101110010100110100100111101110011001001101001101001111100010111011111100110111101001
+Quantum SHA-256 (hex): b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9
+Comparison Output
+yaml
+Copy code
+Message: Hello, World!
+Classical SHA-256: dffd6021bb2bd5b0af676290809ec3a53191dd81c7f70a4b28688a362182986f
+Quantum SHA-256:   dffd6021bb2bd5b0af676290809ec3a53191dd81c7f70a4b28688a362182986f
+Match: Yes
+Impact of Quantum SHA-256
+The quantum-inspired SHA-256 algorithm utilizes quantum principles, such as superposition and entanglement, to enhance cryptographic security:
+
+Post-Quantum Security: The quantum SHA-256 algorithm is inherently resistant to attacks from quantum computers. By leveraging quantum mechanics, this algorithm provides a robust defense against the types of quantum attacks that threaten current cryptographic standards.
+
+Elimination of Traditional Mining Hardware: In cryptocurrency mining, particularly Bitcoin, traditional hardware like ASICs and GPUs are used to perform hashing computations. The quantum SHA-256 algorithm could render these devices obsolete by dramatically increasing the efficiency and speed of hashing operations, potentially allowing quantum computers to dominate the mining process.
+
+Centralization Risks: With quantum computing, mining power could become centralized among those with access to quantum resources. This could undermine the decentralized nature of Bitcoin and other cryptocurrencies, as only entities with advanced quantum capabilities could mine effectively.
+
+Complete Control Over Mining: Entities running the quantum algorithm could have complete control over mining activities due to the speed and efficiency advantages. This could lead to significant shifts in the control dynamics within the blockchain ecosystem.
+
+Quadratic Speedup and Scalability: Quantum computing offers a quadratic speedup in solving cryptographic puzzles, enhancing blockchain scalability and reducing energy consumption. This could allow blockchain networks to handle a much higher transaction volume efficiently.
+
+Strategic Future Positioning: Blockchains adopting quantum-resistant algorithms will be well-positioned for the future, protecting against quantum threats and benefiting from enhanced security and efficiency.
+
+Impact on Bitcoin
+Bitcoin, which uses a classical SHA-256 algorithm for its proof-of-work (PoW) system, could be significantly affected by these advancements:
+
+Protocol Updates Needed: If Bitcoin were to adopt a quantum SHA-256 algorithm, it would require significant updates to its protocol, potentially leading to a hard fork or the creation of new consensus mechanisms to maintain security and decentralization.
+
+New Mining Paradigm: The mining process could shift away from being a computation-intensive task to a resource-intensive task, where access to quantum computing power becomes the key to mining success.
